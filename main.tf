@@ -49,7 +49,7 @@ resource "aws_instance" "web" {
   tags {
     Identity = "autodesk-chipmunk"
     Purpose  = "Terraform training"
-    Name     = "web ${count.index+1}"
+    Name     = "web count is ${count.index+1}"
   }
 }
 
